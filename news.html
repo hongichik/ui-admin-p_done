@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>DASHMIN - Bootstrap Admin Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container-xxl position-relative bg-white d-flex p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Sidebar Start -->
+        <div class="sidebar pe-4 pb-3">
+            <nav class="navbar bg-light navbar-light">
+                <a href="index.html" class="navbar-brand mx-4 mb-3">
+                    <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>DASHMIN</h3>
+                </a>
+                <div class="d-flex align-items-center ms-4 mb-4">
+                    <div class="position-relative">
+                        <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                        <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
+                    </div>
+                    <div class="ms-3">
+                        <h6 class="mb-0">Jhon Doe</h6>
+                        <span>Admin</span>
+                    </div>
+                </div>
+                <div class="navbar-nav w-100">
+                    <a href="dashboard.html" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+                    <div class="nav-item dropdown">
+                        <a href="/news.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-newspaper me-2"></i>Quản lý tin tức</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="/news.html" class="dropdown-item">Dạng text</a>
+                            <a href="/news.html" class="dropdown-item">Dạng video</a>
+                            <a href="/news.html" class="dropdown-item">Dạng thước phim</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="/news" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-newspaper me-2"></i>Quản lý tin tức</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="button.html" class="dropdown-item">Dạng text</a>
+                            <a href="typography.html" class="dropdown-item">Dạng video</a>
+                            <a href="element.html" class="dropdown-item">Dạng thước phim</a>
+                        </div>
+                    </div>
+                    <a href="widget.html" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Widgets</a>
+                    <a href="form.html" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Forms</a>
+                    <a href="table.html" class="nav-item nav-link active"><i class="fa fa-table me-2"></i>Tables</a>
+                    <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Pages</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="signin.html" class="dropdown-item">Sign In</a>
+                            <a href="signup.html" class="dropdown-item">Sign Up</a>
+                            <a href="404.html" class="dropdown-item">404 Error</a>
+                            <a href="blank.html" class="dropdown-item">Blank Page</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Sidebar End -->
+
+
+        <!-- Content Start -->
+        <div class="content">
+            <!-- Navbar Start -->
+            <nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
+                <div class="nav-item dropdown me-0 ms-auto">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        <img class="rounded-circle me-lg-2" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+                        <a href="#" class="dropdown-item">My Profile</a>
+                        <a href="#" class="dropdown-item">Settings</a>
+                        <a href="#" class="dropdown-item">Log Out</a>
+                    </div>
+                </div>
+            </nav>
+            <!-- Navbar End -->
+
+
+            <!-- Table Start -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="bg-light rounded h-100 p-4">
+                    <div class="d-flex justify-content-between">
+                        <h3>Quản lý Media</h3>
+                    </div>
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-text-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-text" type="button" role="tab" aria-controls="nav-text"
+                                aria-selected="true">Dạng Text</button>
+                            <button class="nav-link" id="nav-video-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-video" type="button" role="tab"
+                                aria-controls="nav-video" aria-selected="false">Dạng video</button>
+                            <button class="nav-link" id="nav-movie-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-movie" type="button" role="tab"
+                                aria-controls="nav-movie" aria-selected="false">Dạng thước phim</button>
+                        </div>
+                    </nav>
+                    <div class="tab-content pt-3" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-text" role="tabpanel" aria-labelledby="nav-text-tab">
+                            <div class="bg-light rounded h-100 p-4 mw-100 overflow-auto">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Tiêu đề</th>
+                                            <th scope="col">Nội dung</th>
+                                            <th scope="col">Ảnh bài viết</th>
+                                            <th scope="col">Ngày tạo</th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>Thủ tướng: Ga T3 Tân Sơn Nhất phải đúng tiến độ, không đội vốn</th>
+                                            <td>
+                                                Yêu cầu được Thủ tướng Phạm Minh Chính đưa ra tại lễ khởi công dự án nhà ga T3 sân bay Tân Sơn Nhất, chiều 24/12. Dự án có nguồn vốn từ Tổng công ty hàng không (ACV), công suất 20 triệu khách mỗi năm. Để hoàn tất thủ tục khởi công dự án, Thủ tướng ghi nhận nỗ lực của Bộ Giao thông Vận tải, Quốc phòng cùng UBND TP HCM và các bên liên quan phối hợp tháo gỡ vướng mắc. Tuy nhiên đây mới là bước đầu, quá trình thực hiện có thể khó khăn, thách thức, nên bộ ngành và địa phương phải cập nhật giải quyết, đảm bảo tiến độ và chất lượng công trình. "Nếu vướng mắc lớn, Chính phủ sẽ đồng hành tháo gỡ, nhất là vấn đề giải phóng mặt bằng", Thủ tướng nói và yêu cầu quá trình triển khai tuyệt đối không để xảy ra tiêu cực. Lãnh đạo Chính phủ cũng cho biết những năm qua, nhiều nguồn lực được Trung ương đầu tư, phát triển hạ tầng giao thông quốc gia, bao gồm lĩnh vực hàng không, song chưa đáp ứng nhu cầu dẫn đến quá tải như ở Tân Sơn Nhất. Do vậy, ga T3 khi hoàn thành sẽ góp phần giảm ùn tắc cho sân bay, tăng khả năng phục vụ khách. Nhà ga này cùng với sân bay Long Thành ở Đồng Nai khi khai thác góp phần thúc đẩy phát triển kinh tế, du lịch, 
+                                            </td>
+                                            <td>
+                                                <img style="width: 100px; height: 100px;" src="/img/testimonial-1.jpg" alt="">
+                                            </td>
+                                            <td class="text-nowrap">2023-01-09</td>
+                                            <td>
+                                                <div class="dropdown-table dropdown dropstart">
+                                                    <a href="" class="dropdown-table-icon" data-bs-toggle="dropdown">
+                                                        <img src="./img/nav-icon.svg" alt="icon">
+                                                    </a>
+                                                    <div class="dropdown-menu  border-0">
+                                                        <!-- <a class="dropdown-item table-event" data-id="user-1" data-height="150"><i class="fa fa-regular fa-lock pe-2"></i>Đã xác thực</a> -->
+                                                        <a class="dropdown-item table-event" data-id="news-1" data-height="600"><i class="fa fa-edit pe-2"></i>Sửa</a>
+                                                        <a class="dropdown-item table-event" data-id="news-2" data-height="150"><i class="fa fa-window-close pe-2"></i>Xóa</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                <div class="pagination-table d-flex w-100" style="min-width: 600px;">
+                                    <div class="d-flex me-0 ms-auto">
+                                        <p class="pe-2">Số hàng mỗi trang : </p>
+                                        <div class="form-floating mb-3">
+                                            <select class="px-1 py-0 border" id="">
+                                                <option value="5" selected>5</option>
+                                                <option value="10">10</option>
+                                                <option value="25">25</option>
+                                                <option value="50">50</option>
+                                            </select>
+                                        </div>
+                                        <p class="px-3">1-5 trong 62</p>
+                                        <button class="page-link py-0 ">
+                                            <span  aria-hidden="true">&laquo;</span>
+                                        </button>
+                                        <button class="page-link py-0 ">
+                                            <span  aria-hidden="true">&raquo;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-video" role="tabpanel" aria-labelledby="nav-video-tab">
+                            <div class="bg-light rounded h-100 p-4 mw-100 overflow-auto">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Tiêu đề</th>
+                                            <th scope="col">Nội dung</th>
+                                            <th scope="col">Video bài viết</th>
+                                            <th scope="col">Ngày tạo</th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Tiêu đề</th>
+                                            <td>Nội dung</td>
+                                            <td>
+                                                <img class="btn-show-video" style="width: 100px;height: 100px;" src="./img/video-img.jpg" alt="video demo">
+                                                <div class="show-video">
+                                                    <div class="bg_blur"></div>
+                                                    <video  controls>
+                                                        <source class="show-video-child" src="./img/video.mp4" type="video/mp4">
+                                                        Your browser does not support HTML video.
+                                                    </video>
+                                                </div>
+                                            </td>
+                                            <td class="text-nowrap">2023-01-09</td>
+                                            <td>
+                                                <div class="dropdown-table dropdown dropstart">
+                                                    <a href="" class="dropdown-table-icon" data-bs-toggle="dropdown">
+                                                        <img src="./img/nav-icon.svg" alt="icon">
+                                                    </a>
+                                                    <div class="dropdown-menu  border-0">
+                                                        <!-- <a class="dropdown-item table-event" data-id="user-1" data-height="150"><i class="fa fa-regular fa-lock pe-2"></i>Đã xác thực</a> -->
+                                                        <a class="dropdown-item table-event" data-id="news-1" data-height="600"><i class="fa fa-edit pe-2"></i>Sửa</a>
+                                                        <a class="dropdown-item table-event" data-id="news-2" data-height="150"><i class="fa fa-window-close pe-2"></i>Xóa</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Tiêu đề</th>
+                                            <td>Nội dung</td>
+                                            <td>
+                                                <img class="btn-show-video" style="width: 100px;height: 100px;" src="./img/video-img.jpg" alt="video demo">
+                                                <div class="show-video">
+                                                    <div class="bg_blur"></div>
+                                                    <video  controls>
+                                                        <source class="show-video-child" src="./img/video.mp4" type="video/mp4">
+                                                        Your browser does not support HTML video.
+                                                    </video>
+                                                </div>
+                                            </td>
+                                            <td class="text-nowrap">2023-01-09</td>
+                                            <td>
+                                                <div class="dropdown-table dropdown dropstart">
+                                                    <a href="" class="dropdown-table-icon" data-bs-toggle="dropdown">
+                                                        <img src="./img/nav-icon.svg" alt="icon">
+                                                    </a>
+                                                    <div class="dropdown-menu  border-0">
+                                                        <!-- <a class="dropdown-item table-event" data-id="user-1" data-height="150"><i class="fa fa-regular fa-lock pe-2"></i>Đã xác thực</a> -->
+                                                        <a class="dropdown-item table-event" data-id="news-1" data-height="600"><i class="fa fa-edit pe-2"></i>Sửa</a>
+                                                        <a class="dropdown-item table-event" data-id="news-2" data-height="150"><i class="fa fa-window-close pe-2"></i>Xóa</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="pagination-table d-flex w-100" style="min-width: 600px;">
+                                    <div class="d-flex me-0 ms-auto">
+                                        <p class="pe-2">Số hàng mỗi trang : </p>
+                                        <div class="form-floating mb-3">
+                                            <select class="px-1 py-0 border" id="">
+                                                <option value="5" selected>5</option>
+                                                <option value="10">10</option>
+                                                <option value="25">25</option>
+                                                <option value="50">50</option>
+                                            </select>
+                                        </div>
+                                        <p class="px-3">1-5 trong 62</p>
+                                        <button class="page-link py-0 ">
+                                            <span  aria-hidden="true">&laquo;</span>
+                                        </button>
+                                        <button class="page-link py-0 ">
+                                            <span  aria-hidden="true">&raquo;</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-movie" role="tabpanel" aria-labelledby="nav-movie-tab">
+                            <div class="bg-light rounded h-100 p-4 mw-100 overflow-auto">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Tiêu đề</th>
+                                            <th scope="col">Nội dung</th>
+                                            <th scope="col">Video bài viết</th>
+                                            <th scope="col">Ngày tạo</th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Tiêu đề phim</th>
+                                            <td>Nội dung</td>
+                                            <td>
+                                                <img class="btn-show-video" style="width: 100px;height: 100px;" src="./img/video-img.jpg" alt="video demo">
+                                                <div class="show-video">
+                                                    <div class="bg_blur"></div>
+                                                    <video  controls>
+                                                        <source class="show-video-child" src="./img/video.mp4" type="video/mp4">
+                                                        Your browser does not support HTML video.
+                                                    </video>
+                                                </div>
+                                            </td>
+                                            <td class="text-nowrap">2023-01-09</td>
+                                            <td>
+                                                <div class="dropdown-table dropdown dropstart">
+                                                    <a href="" class="dropdown-table-icon" data-bs-toggle="dropdown">
+                                                        <img src="./img/nav-icon.svg" alt="icon">
+                                                    </a>
+                                                    <div class="dropdown-menu  border-0">
+                                                        <!-- <a class="dropdown-item table-event" data-id="user-1" data-height="150"><i class="fa fa-regular fa-lock pe-2"></i>Đã xác thực</a> -->
+                                                        <a class="dropdown-item table-event" data-id="news-1" data-height="600"><i class="fa fa-edit pe-2"></i>Sửa</a>
+                                                        <a class="dropdown-item table-event" data-id="news-2" data-height="150"><i class="fa fa-window-close pe-2"></i>Xóa</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="pagination-table d-flex w-100" style="min-width: 600px;">
+                                    <div class="d-flex me-0 ms-auto">
+                                        <p class="pe-2">Số hàng mỗi trang : </p>
+                                        <div class="form-floating mb-3">
+                                            <select class="px-1 py-0 border" id="">
+                                                <option value="5" selected>5</option>
+                                                <option value="10">10</option>
+                                                <option value="25">25</option>
+                                                <option value="50">50</option>
+                                            </select>
+                                        </div>
+                                        <p class="px-3">1-5 trong 62</p>
+                                        <button class="page-link py-0 ">
+                                            <span  aria-hidden="true">&laquo;</span>
+                                        </button>
+                                        <button class="page-link py-0 ">
+                                            <span  aria-hidden="true">&raquo;</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Table End -->
+
+
+
+        </div>
+        <!-- Content End -->
+
+
+        <!-- Hiển thị khi nhấn vào chức năng của bảng -->
+        <!-- có sẵn hàm show_event_table() trong file table.js để tắt bảng thông báo này -->
+        <div class="show_event_table">
+            <div class="bg_blur"></div>
+            <div class="form_event" id="news-1">
+                <div class="bg-light rounded h-100 p-4">
+                    <h5 class="mb-4">Sửa thông bài viết</h5>
+                    <form class="d-flex flex-column">
+                        <div class="mb-3">
+                            <label  class="form-label">Ảnh bài biết</label>
+                            <input class="form-control" type="file" >
+                        </div>
+                        <div class="mb-3">
+                            <label  class="form-label">Tiêu đề</label>
+                            <input type="text" class="form-control" >
+                        </div>
+                        <div class="mb-3">
+                            <label  class="form-label">Kiểu</label>
+                            <select class="form-select" id="floatingSelect"
+                                aria-label="Floating label select example">
+                                <option value="text" selected>Dạng Text</option>
+                                <option value="video">Dạng Video</option>
+                                <option value="movie">Dạng thước phim</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">mô tả</label>
+                            <textarea class="form-control" style="height: 150px;"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary me-0 ms-auto">Lưu chỉnh sửa</button>
+                    </form>
+                </div>
+            </div>
+            <div class="form_event" id="news-2">
+                <div class="d-flex w-100 h-100 flex-column">
+                    <p class="m-auto mb-3">Bạn có chắc muốn xóa tin tức này</p>
+                    <div class="d-flex w-100 justify-content-end pb-3 pe-3">
+                        <button type="button" class="btn btn-danger rounded-pill m-2">Không đồng ý</button>
+                        <button type="button" class="btn btn-success rounded-pill m-2">Đồng ý</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/chart/chart.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="./js/table.js"></script>
+</body>
+
+</html>
